@@ -23,4 +23,12 @@
         func testRunA() {
             XCTAssertTrue(helper.run())
         }
+        
+        func testBuildA() {
+            XCTAssertThrowsError(try helper.build(true))
+        }
+        
+        func testBuildB() {
+            XCTAssertNoThrow(try helper.build(false))
+        }
     }
