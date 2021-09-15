@@ -19,4 +19,8 @@
             let result = helper.summ(10, 2)
             XCTAssertNotEqual(result, 0)
         }
+        
+        func testRunA() {
+            XCTAssertTrue(helper.run())
+        }
     }
