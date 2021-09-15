@@ -8,4 +8,12 @@ public class Helper {
     public func run() -> Bool {
         return summ(0, 0) == 0
     }
+    
+    public func build(_ force: Bool) throws {
+        if force {
+            throw MyError.build
+        } else {
+            print("Success")
+        }
+    }
 }
