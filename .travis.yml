@@ -5,7 +5,6 @@ sudo: required
 dist: trusty
 osx_image: xcode12.5
 script:
-  - swift build
   - swift test
 notifications:
   email:
